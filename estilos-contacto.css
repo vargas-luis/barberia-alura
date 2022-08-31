@@ -1,3 +1,6 @@
+*{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
 header{
     background-color: #BBBBBB;
     padding: 20px 0px;
@@ -7,6 +10,7 @@ header{
     width: 940px;
     position: relative;
     margin: 0 auto;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 nav{
@@ -37,6 +41,7 @@ footer {
     background: url(img/bg.jpg);
     text-align: center;
     padding: 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .copyright {
@@ -87,10 +92,47 @@ select{
     background: orange;
     border-radius: 20px;
     border: none;
-    transition: 1s background;
+    transition: 1s all;
     cursor: pointer;
 }
 
 #submit:hover{
     background: darkorange;
+    transform: scale(1.2);
+}
+
+table{
+    margin: 40px 40px;
+    width: 30%;
+}
+
+thead{
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+@media screen and (max-width:480px){
+    h1 {
+    text-align: center;
+    }
+
+    .caja, main{
+        width: 90%;
+    }
+
+    .input-patron, .table, #submit{
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    nav{
+        position: static;
+        width: 60%;
+    }
 }
